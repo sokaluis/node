@@ -9,6 +9,6 @@ console.clear();
 
 console.log(argv);
 
-crearArchivo(argv.b, argv.l)
+crearArchivo(argv.b, argv.l, argv.m)
   .then((nombreArchivo) => console.log(nombreArchivo, "creadot"))
   .catch((err) => console.error(err));

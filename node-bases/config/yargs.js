@@ -14,6 +14,12 @@ const argv = yargs(hideBin(process.argv))
     default: false,
     describe: "List the table in console",
   })
+  .option("m", {
+    alias: "max",
+    type: "number",
+    default: 10,
+    describe: "Max of number in the table",
+  })
   .check((argv, options) => {
     if (isNaN(argv.b)) {
       throw new Error("La base tiene que ser un número");

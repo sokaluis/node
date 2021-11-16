@@ -1,9 +1,9 @@
 const fs = require("fs");
 
-const crearArchivo = async (base, listar) => {
+const crearArchivo = async (base, listar, max) => {
   try {
     let salida = "";
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 0; i <= max; i++) {
       salida += `${base} x ${i} = ${base * i}\n`;
     }
     if (listar) {
